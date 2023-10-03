@@ -1,6 +1,12 @@
-.top{
+/* *{
+    background-color: black;
+} */
+/* .top{
     min-height: 500px;
     background-color: aqua;
+} */
+.topRow{
+    margin-top: 5%;
 }
 .gg{
     /* width: 0%;  */
