@@ -22,20 +22,93 @@
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
         <script src="https://kit.fontawesome.com/346c4253c2.js" crossorigin="anonymous"></script>
 
+        <link rel="stylesheet" href="{{asset('fontawesome-free-6.4.2-web\css\all.min.css')}}">
+
     </head>
     <body class="antialiased">
         <div class="top">
             <div class="row topRow">
-                <div class="col-8" style="color: white">
-                    <i class="fa-sharp fa-solid fa-dash fa-rotate-90 fa-lg"></i>
-                    <i class="fa-regular fa-heart"></i>
-
+                <div class="col-8">
+                    <div class="card cardTop1">
+                        <div class="card-body">
+                            <div class="card-title">About Me 😊</div>
+                            <div class="card-text autotype">
+                                {{-- Hello, I'm Emmanuel Okala Uduma 🚀, a passionate and
+                                self-motivated software engineering student based in the United Kingdom 🇬🇧.
+                                My journey into the world of software development began about three years ago,
+                                and it has been a thrilling adventure ever since. --}}
+                            </div>
+                            <div class="card-title">💡 My Story:</div>
+                            <div class="card-text">
+                                The spark that ignited my passion for software development came when
+                                I was tasked with building my first social media web application as
+                                a school project. What started as a simple assignment soon became an
+                                all-consuming obsession. The thrill of creating something from scratch,
+                                with the power to impact the real world, was simply irresistible.
+                            </div>
+                            <div class="card-title">🌟 My Journey So Far:</div>
+                            <div class="card-text">
+                                Since those early days, I've dabbled in a wide array of software development projects,
+                                ranging from Android applications to cross-platform solutions, web applications,
+                                desktop games, and more. With each project, my confidence grew,
+                                and I found myself eagerly taking on collaborative freelance work,
+                                not just for the paycheck, but because I'm genuinely passionate
+                                about crafting software solutions.
+                            </div>
+                            <div class="card-title">🚀 My Mission:</div>
+                            <div class="card-text">
+                                My journey in the world of software development is far from over;
+                                in fact, it's just beginning. I'm committed to exploring every
+                                nook and cranny of this field, pushing the boundaries of what's possible,
+                                and maximizing my potential wherever it leads me..
+                            </div>
+                            <div class="card-title">🔍 What Sets Me Apart:</div>
+                            <div class="card-text">
+                                One of the reasons I excel in projects and earn opportunities is my
+                                unwavering commitment to detail and efficiency.
+                                I thrive on optimizing budgets and time, ensuring that the software
+                                I create is not only easily manageable but also continuously improvable,
+                                because the world of software is ever-evolving.
+                            </div>
+                            <div class="card-title">🤝 My Commitment:</div>
+                            <div class="card-text">
+                                I always strive to deliver more value than expected.
+                                Whether I'm working on a project for a client or as part of a team,
+                                my goal is to ensure that the end result is nothing short of exceptional.
+                                I believe in leaving clients and companies not just satisfied but genuinely impressed.
+                            </div>
+                            <div class="card-title">👀 Explore My Portfolio:</div>
+                            <div class="card-text">
+                                Feel free to explore the rest of my portfolio, where you'll find a showcase
+                                of my work and the projects that define my journey in software development.
+                                I hope you enjoy the journey as much as I have enjoyed living it.
+                            </div>
+                            <div class="card-title"></div>
+                            <div class="card-text">
+                                Thank you for taking the time to get to know me better,
+                                and I look forward to connecting with you and exploring
+                                the exciting possibilities of technology together! 🚀🌟
+                            </div>
+                        </div><!--card body end -->
+                    </div><!--card end -->
                 </div>
                 <div class="col-4 gg">
                     <img src="{{ asset('imgs/pp2.jpg') }}" alt="stuff" class="image">
                 </div>
             </div><!--end of row div -->
         </div><!-- end of top div -->
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".autotype",{
+                strings: ["Hello, I'm Emmanuel Okala Uduma 🚀, a passionate and",
+                            "self-motivated software engineering student based in the United Kingdom 🇬🇧.",
+                            "My journey into the world of software development began about three years ago,",
+                            "and it has been a thrilling adventure ever since."],
+                typeSpeed: 10,
+                loop: true
+            })
+        </script>
     </body>
 
 </html>
