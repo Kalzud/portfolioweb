@@ -29,14 +29,14 @@
         <div class="top">
             <div class="row topRow">
                 <div class="col-8">
-                    <div class="card cardTop1">
+                    <div class="card aboutMeCard">
                         <div class="card-body">
-                            <div class="card-title">About Me 😊</div>
-                            <div class="card-text autotype">
-                                {{-- Hello, I'm Emmanuel Okala Uduma 🚀, a passionate and
+                            <div class="card-title aboutMeHeading">About Me 😊</div>
+                            <div class="card-text">
+                                Hello, I'm Emmanuel Okala Uduma 🚀, a passionate and
                                 self-motivated software engineering student based in the United Kingdom 🇬🇧.
                                 My journey into the world of software development began about three years ago,
-                                and it has been a thrilling adventure ever since. --}}
+                                and it has been a thrilling adventure ever since.
                             </div>
                             <div class="card-title">💡 My Story:</div>
                             <div class="card-text">
@@ -55,7 +55,7 @@
                                 not just for the paycheck, but because I'm genuinely passionate
                                 about crafting software solutions.
                             </div>
-                            <div class="card-title">🚀 My Mission:</div>
+                            {{-- <div class="card-title">🚀 My Mission:</div>
                             <div class="card-text">
                                 My journey in the world of software development is far from over;
                                 in fact, it's just beginning. I'm committed to exploring every
@@ -88,12 +88,12 @@
                                 Thank you for taking the time to get to know me better,
                                 and I look forward to connecting with you and exploring
                                 the exciting possibilities of technology together! 🚀🌟
-                            </div>
+                            </div> --}}
                         </div><!--card body end -->
                     </div><!--card end -->
                 </div>
-                <div class="col-4 gg">
-                    <img src="{{ asset('imgs/pp2.jpg') }}" alt="stuff" class="image">
+                <div class="col-4 portImg">
+                    <img src="{{ asset('imgs/pp2.jpg') }}" alt="Portfolio_Image">
                 </div>
             </div><!--end of row div -->
         </div><!-- end of top div -->
@@ -101,12 +101,12 @@
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed(".autotype",{
-                strings: ["Hello, I'm Emmanuel Okala Uduma 🚀, a passionate and",
-                            "self-motivated software engineering student based in the United Kingdom 🇬🇧.",
-                            "My journey into the world of software development began about three years ago,",
+                strings: ["Hello, I'm Emmanuel Okala Uduma 🚀, a passionate and"+
+                            "self-motivated software engineering student based in the United Kingdom 🇬🇧."+
+                            " My journey into the world of software development began about three years ago,"+
                             "and it has been a thrilling adventure ever since."],
                 typeSpeed: 10,
-                loop: true
+                // loop: true
             })
         </script>
     </body>
