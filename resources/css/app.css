@@ -1,3 +1,54 @@
+.card{
+    z-index: 2;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    min-height: 400px;
+    /* padding: 100px; */
+}
+.Turquoise{
+    background-color: #00CED1;
+}
+.SkyBlue{
+    background-color: #87CEEB;
+}
+.LightSteelBlue{
+    background-color: #B0C4DE;
+}
+.Lavender{
+    background-color: #E6E6FA;
+}
+.LavenderBlush{
+    background-color: #FFF0F5;
+}
+.MistyRose{
+    background-color: #FFE4E1;
+}
+.LightCoral{
+    background-color: #F08080;
+}
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image: url('../../public/svg/layer1.svg');
+}
+.blob-motion{
+    position: absolute;
+    transform: translateY(-20vh);
+    transform: translatex(60vh);
+    z-index: 1;
+}
 /* ===================================== Top row ===================================== */
 .topRow{
     margin-top: 5%;
@@ -59,6 +110,52 @@
     display: flex;
     justify-content: center;
 }
+/* ========================================== fourth row ======================================================== */
+.fourthrow .main .card{
+    margin-top: 10px;
+    width: auto;
+}
+.fourthrow .main .card-body .row{
+    display: flex;
+    justify-content: center;
+}
+.fourthrow .main .row h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .thirdrow .main .card::-webkit-scrollbar{
     width: 10px;
 }
