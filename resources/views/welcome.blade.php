@@ -946,7 +946,7 @@
     {{-- ============================================= start of third row ==================================================== --}}
     <section class="SkyBlue">
         <div class="row thirdrow">
-            <div class="card main" style="min-width: 100%; border: none; background-color: transparent">
+            <div class="card main timeline-container" style="min-width: 100%; border: none; background-color: transparent">
                 <div class="card-body">
                     <div class="top-section"><h1>Best projects 📂</h1></div>
 
@@ -1176,10 +1176,124 @@
     {{-- =============================================== start of fifth row =================================================================== --}}
     <section class="Lavender">
         <div class="row fifthrow">
-            <div class="card main" style="border: none; background-color: transparent">
+            <div class="card main timeline-container" style="border: none; background-color: transparent">
                 <div class="card-body">
-                    <div class="row">
-                        <h1>My testimonials 📣</h1>
+                    <div class="top-section"><h1>My Testimonials 📣</h1></div>
+
+                    {{-- starts the timeline section --}}
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h1>SecondNotes: Embracing Flutter and Dart 🚀</h1>
+                                <p>
+                                    My journey into the world of software development led me to my first
+                                    cross-platform project, where I embarked on a captivating exploration of the
+                                    Flutter framework and the Dart programming language. Here, I delved deep into
+                                    the intricacies of software development, learning to separate providers,
+                                    services, and databases from the user interface itself.
+
+                                    One exciting aspect of this project was my introduction to the concept of state
+                                    management using the BLoC pattern. This led to improved testing, enhanced
+                                    reusability, and a seamless approach to scaling my project. As I fine-tuned my
+                                    skills, I also deepened my understanding of CRUD (Create, Read, Update, Delete)
+                                    operations in relation to streams. It was a milestone in my learning journey.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h1>ScreenTalker: A Fusion of Imagination and Technology 📽️</h1>
+                                <p>
+                                    ScreenTalker stands as one of my most captivating projects, driven by my desire
+                                    to let my imagination soar. This Android application was my canvas, where I
+                                    merged the best features of Instagram, YouTube, and Netflix. The result? A
+                                    movie-viewing platform that not only facilitates side comments but also fosters
+                                    interactive movie-watching communities.
+
+                                    But ScreenTalker went even further. It introduced text messaging, calls, and
+                                    video calls—all within the same application. The project allowed me to dive
+                                    headfirst into Firebase, exploring Firestore, storage, authentication, and more.
+                                    I fell in love with Firebase's flexibility and the myriad of plugins that
+                                    enriched my project's functionality.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h1>Onboarding: Bridging Academia and Real-World Experience 📚</h1>
+                                <p>
+                                    My first real-world client interaction came through the Onboarding project, part
+                                    of a school hackathon. We were tasked with developing an onboarding assistance
+                                    web application for an actual company. This marked my initiation into the Scrum
+                                    framework, complete with iterations and weekly demos.
+
+                                    Through this experience, I gained a deeper understanding of the software
+                                    development cycle, mastering concepts like time management and budget control.
+                                    It was also an opportunity to delve into PHP, as I took sole responsibility for
+                                    the project's backend. The result? A minimum viable project that empowered the
+                                    company to build upon our foundation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h1>SocialMediaWeb: Where My Coding Journey Truly Began 🌐</h1>
+                                <p>
+                                    SocialMediaWeb holds a special place in my heart as the project that sparked my
+                                    fascination with software development. It was here that I marveled at the magic
+                                    of turning lines of code into a functional social media web application,
+                                    reminiscent of those I had used growing up.
+
+                                    What started as a simple project evolved into a feature-rich application with
+                                    friend requests, likes, comments, and more. I delved into JavaScript,
+                                    implementing live searches, requests, and interactive maps to locate friends.
+                                    Security became a paramount concern, leading me to explore PHP's security
+                                    measures extensively.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h1>COBOL2XML: Real-World Software Enhancement 💼</h1>
+                                <p>
+                                    COBOL2XML introduced me to real-world software development scenarios where I had
+                                    to enhance an existing COBOL program. It was a unique opportunity to learn and
+                                    understand the language, enabling me to add valuable features to improve its
+                                    capabilities.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h1>JavaSmallGame: Crafting Code and Games with Java 🎮</h1>
+                                <p>
+                                    JavaSmallGame marked my first extensive Java project and my foray into game
+                                    development. I immersed myself in various design patterns, implementing concepts
+                                    like Singleton, Factory, and Strategy. This project emphasized the importance of
+                                    writing reusable code that could be easily improved upon.
+
+                                    Beyond the game itself, it was about honing my skills in writing effective,
+                                    clean, and maintainable code—a valuable lesson that transcended the boundaries
+                                    of the gaming world.
+
+                                    My journey in software development continues to be a thrilling adventure, and I
+                                    look forward to each new project, each line of code, and each opportunity to
+                                    innovate. 🌟
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

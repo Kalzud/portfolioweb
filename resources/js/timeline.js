@@ -1,54 +1,59 @@
+"use strict";
 
-//      "use strict";
+class Timeline {
+  constructor(selector, container) {
+    this.timeline = container.querySelector(selector);
+    this.line = this.timeline.querySelector('.line');
+    this.sections = this.timeline.querySelectorAll('.section');
+    this.prevScrollY = window.scrollY;
+    this.up = false;
+    this.down = false;
+    this.full = false;
+    this.set = 0;
+    this.targetY = window.innerHeight * 0.8;
 
-// function qs(selector, all = false) {
-//   return all ? document.querySelectorAll(selector) : document.querySelector(selector);
-// }
+    this.initialize();
+  }
 
-// const sections = qs('.section', true);
-// const timeline = qs('.timeline');
-// const line = qs('.line');
-// line.style.bottom = `calc(100% - 20px)`;
-// let prevScrollY = window.scrollY;
-// let up, down;
-// let full = false;
-// let set = 0;
-// const targetY = window.innerHeight * .8;
+  initialize() {
+    this.line.style.bottom = `calc(100% - 20px)`;
 
-// function scrollHandler(e) {
-//   const {
-//     scrollY
-//   } = window;
-//   up = scrollY < prevScrollY;
-//   down = !up;
-//   const timelineRect = timeline.getBoundingClientRect();
-//   const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
+    window.addEventListener('scroll', this.scrollHandler.bind(this));
+  }
 
-//   const dist = targetY - timelineRect.top;
-//   console.log(dist);
+  scrollHandler() {
+    const { scrollY } = window;
+    this.up = scrollY < this.prevScrollY;
+    this.down = !this.up;
+    const timelineRect = this.timeline.getBoundingClientRect();
+    const dist = this.targetY - timelineRect.top;
 
-//   if (down && !full) {
-//     set = Math.max(set, dist);
-//     line.style.bottom = `calc(100% - ${set}px)`;
-//   }
+    if (this.down && !this.full) {
+      this.set = Math.max(this.set, dist);
+      this.line.style.bottom = `calc(100% - ${this.set}px)`;
+    }
 
-//   if (dist > timeline.offsetHeight + 50 && !full) {
-//     full = true;
-//     line.style.bottom = `-50px`;
-//   }
+    if (dist > this.timeline.offsetHeight + 50 && !this.full) {
+      this.full = true;
+      this.line.style.bottom = `-50px`;
+    }
 
-//   sections.forEach(item => {
-//     // console.log(item);
-//     const rect = item.getBoundingClientRect(); //     console.log(rect);
+    this.sections.forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      if (rect.top + item.offsetHeight / 5 < this.targetY) {
+        item.classList.add('show-me');
+      }
+    });
 
-//     if (rect.top + item.offsetHeight / 5 < targetY) {
-//       item.classList.add('show-me');
-//     }
-//   }); // console.log(up, down);
+    this.prevScrollY = window.scrollY;
+  }
+}
 
-//   prevScrollY = window.scrollY;
-// }
+// export { Timeline };
 
-// scrollHandler();
-// line.style.display = 'block';
-// window.addEventListener('scroll', scrollHandler);
+// Initialize each timeline separately
+const timelineContainers = document.querySelectorAll('.timeline-container');
+
+timelineContainers.forEach((container) => {
+  const timeline = new Timeline('.timeline', container);
+});
