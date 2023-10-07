@@ -57,6 +57,7 @@ section{
     background-image: url('../../public/svg/layer6.svg');
 }
 /* ================================================= Second row ================================================================== */
+/* =========================================== third row ================================================================================ */
 .top-section{
     text-align: center;
     padding: 4rem 0;
@@ -127,10 +128,8 @@ section{
     transform: none;
     opacity: 1;
 }
-/* h1{
-    font-weight: 400;
-    letter-spacing: 1px;
-} */
+/* ====================================== fifth row =================================================================================== */
+ /* see thirdrow stylying because they use the same timeline and element stylying */
 
 
 
@@ -176,24 +175,8 @@ section{
     font-size: large;
 }
 
-/* =========================================== third row ========================================= */
-.thirdrow{
-    display: flex;
-    justify-content: center;
-}
-.thirdrow .main{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.thirdrow .main .card{
-    margin-top: 20px;
-    height: 300px;
-    overflow-y: scroll;
-}
-.thirdrow .main .row h1{
-    display: flex;
-    justify-content: center;
-}
+
+
 /* ========================================== fourth row ======================================================== */
 .fourthrow .main .card{
     margin-top: 10px;
@@ -207,7 +190,6 @@ section{
     display: flex;
     justify-content: center;
 }
-/* ====================================== fifth row =========================================================== */
 .fifthrow .main .row h1{
     display: flex;
     justify-content: center;
@@ -216,6 +198,72 @@ section{
 .sixthrow .main .row h1{
     display: flex;
     justify-content: center;
+}
+.searchbar{
+    width: 500px;
+    opacity: 0;
+}
+.searchlist{
+    width: 500px;
+    opacity: 0;
+}
+.searchlist li{
+    opacity: 0;
+}
+  /* Style for the fade-out/fade-in animation */
+  .fade-out {
+    animation: fadeOut 3s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+.fade-in {
+    animation: fadeIn 4s ease-in-out forwards;
+    animation-delay: 5s;
+}
+
+.appear{
+    animation: appear 1s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        /* transform: translateY(0); */
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        /* transform: translateY(-100%) */
+        /* transform: translateY(10px); */
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes disappear {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+        display: none;
+    }
 }
 /* ====================================== seventh row =========================================================== */
 .seventhrow .main .row h1{

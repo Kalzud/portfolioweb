@@ -66,7 +66,7 @@ class Timeline {
     // + 50 pixels (essentially checking if we have gone passed the element)
     // and if the full is still false. If both conditions are met then we set
     // full to true saying essentially reached the end of the .timeline element and we move the
-    // line 50 pixels upwards essentially hidding it
+    // line 50 pixels upwards essentially hiding it
     if (dist > this.timeline.offsetHeight + 50 && !this.full) {
       this.full = true;
       this.line.style.bottom = `-50px`;

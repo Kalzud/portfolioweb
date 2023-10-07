@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-    <script src="./js/timeline.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    {{-- <script src="./js/timeline.js"></script> --}}
 
 
     <!-- Styles -->
@@ -1186,7 +1187,7 @@
                         <div class="section">
                             <div class="bead"></div>
                             <div class="content">
-                                <h1>SecondNotes: Embracing Flutter and Dart 🚀</h1>
+                                <h1>ThankGod</h1>
                                 <p>
                                     My journey into the world of software development led me to my first
                                     cross-platform project, where I embarked on a captivating exploration of the
@@ -1206,7 +1207,7 @@
                         <div class="section">
                             <div class="bead"></div>
                             <div class="content">
-                                <h1>ScreenTalker: A Fusion of Imagination and Technology 📽️</h1>
+                                <h1>Serenity</h1>
                                 <p>
                                     ScreenTalker stands as one of my most captivating projects, driven by my desire
                                     to let my imagination soar. This Android application was my canvas, where I
@@ -1226,7 +1227,7 @@
                         <div class="section">
                             <div class="bead"></div>
                             <div class="content">
-                                <h1>Onboarding: Bridging Academia and Real-World Experience 📚</h1>
+                                <h1>Ozioma</h1>
                                 <p>
                                     My first real-world client interaction came through the Onboarding project, part
                                     of a school hackathon. We were tasked with developing an onboarding assistance
@@ -1245,7 +1246,7 @@
                         <div class="section">
                             <div class="bead"></div>
                             <div class="content">
-                                <h1>SocialMediaWeb: Where My Coding Journey Truly Began 🌐</h1>
+                                <h1>Fyp</h1>
                                 <p>
                                     SocialMediaWeb holds a special place in my heart as the project that sparked my
                                     fascination with software development. It was here that I marveled at the magic
@@ -1264,7 +1265,7 @@
                         <div class="section">
                             <div class="bead"></div>
                             <div class="content">
-                                <h1>COBOL2XML: Real-World Software Enhancement 💼</h1>
+                                <h1>Mobile dev</h1>
                                 <p>
                                     COBOL2XML introduced me to real-world software development scenarios where I had
                                     to enhance an existing COBOL program. It was a unique opportunity to learn and
@@ -1277,7 +1278,7 @@
                         <div class="section">
                             <div class="bead"></div>
                             <div class="content">
-                                <h1>JavaSmallGame: Crafting Code and Games with Java 🎮</h1>
+                                <h1>german compnay i worked for hackcamp</h1>
                                 <p>
                                     JavaSmallGame marked my first extensive Java project and my foray into game
                                     development. I immersed myself in various design patterns, implementing concepts
@@ -1308,8 +1309,27 @@
         <div class="row sixthrow">
             <div class="card main" style="border: none; background-color: transparent">
                 <div class="card-body">
-                    <div class="row">
-                        <h1>My Soft skills 🧠</h1>
+                    <div class="row" style="display: flex; justify-content: center">
+                        <h1 class="fade-out">My Soft skills 🧠</h1>
+                            <div class="card searchbar fade-in">
+                                <div class="card-body autotype"><i class="fas fa-search mr-2"></i></div>
+                            </div>
+                            <div class="row" style="display: flex; justify-content: center">
+                                <div class="card searchlist" id="searchlistcard">
+                                    <div class="card-body">
+                                        <ul style="padding-left: 0">
+                                            <li id="searchlist1" class="">Problem Solving</li>
+                                            <li id="searchlist2">Teamwork</li>
+                                            <li id="searchlist3">Programming</li>
+                                            <li id="searchlist4">Leadership</li>
+                                            <li id="searchlist5">Communication</li>
+                                            <li id="searchlist6">Working Under Pressure</li>
+                                            <li id="searchlist7">Adaptability</li>
+                                            <li id="searchlist8">Diversity</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
