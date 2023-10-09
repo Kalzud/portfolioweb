@@ -12,6 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {{-- <script src="./js/timeline.js"></script> --}}
 
 
@@ -1310,24 +1311,184 @@
             <div class="card main" style="border: none; background-color: transparent">
                 <div class="card-body">
                     <div class="row" style="display: flex; justify-content: center">
-                        <h1 class="fade-out">My Soft skills 🧠</h1>
-                            <div class="card searchbar fade-in">
-                                <div class="card-body autotype"><i class="fas fa-search mr-2"></i></div>
-                            </div>
+                        <h1 class="" id="fade-out">My Soft skills 🧠</h1>
                             <div class="row" style="display: flex; justify-content: center">
-                                <div class="card searchlist" id="searchlistcard">
-                                    <div class="card-body">
-                                        <ul style="padding-left: 0">
-                                            <li id="searchlist1" class="">Problem Solving</li>
-                                            <li id="searchlist2">Teamwork</li>
-                                            <li id="searchlist3">Programming</li>
-                                            <li id="searchlist4">Leadership</li>
-                                            <li id="searchlist5">Communication</li>
-                                            <li id="searchlist6">Working Under Pressure</li>
-                                            <li id="searchlist7">Adaptability</li>
-                                            <li id="searchlist8">Diversity</li>
-                                        </ul>
+                                <div class="col-4 points">
+                                    {{-- ========================= --}}
+                                    <div class="card skillhiddenleft1">
+                                        <div class="card-body">
+                                            <div class="card-title">Problem identification and Solving</div>
+                                            <div class="card-text">
+                                                Proficient in identifying and resolving complex issues with dedication to finding
+                                                effective, reusable, and innovative solutions. Whether it's within the realm of
+                                                programming or other challenges, problem-solving is a passion that drives me.
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="card skillhiddenleft2">
+                                        <div class="card-body">
+                                            <div class="card-title">Collaborative Teamwork</div>
+                                            <div class="card-text">
+                                                A collaborative team player who values collective success.
+                                                I thrive on working with diverse individuals, recognizing that
+                                                everyone's unique perspective adds depth to projects.
+                                                Collaboration not only accelerates project delivery
+                                                but also results in richer and more well-rounded outcomes.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenleft3">
+                                        <div class="card-body">
+                                            <div class="card-title">Programming</div>
+                                            <div class="card-text">
+                                                Adept in multiple programming languages and technologies, I find solace in the world of code,
+                                                where lines, indentations, tags, and colors come together to create remarkable solutions.
+                                                My journey spans various languages and frameworks, from Kotlin and Java to Dart,
+                                                Swift, PHP, JavaScript, Laravel, and Flutter.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenleft4">
+                                        <div class="card-body">
+                                            <div class="card-title">Leadership</div>
+                                            <div class="card-text">
+                                                An inspirational leader with a clear vision, I possess the ability to motivate and guide others effectively.
+                                                I excel at allocating tasks based on individual strengths, fostering a feedback-driven
+                                                environment for continuous improvement. I've experienced success in resolving team
+                                                challenges by addressing issues constructively.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenleft5">
+                                        <div class="card-body">
+                                            <div class="card-title">Effective Communication</div>
+                                            <div class="card-text">
+                                                A strong communicator skilled in fostering clarity and understanding.
+                                                My approach involves active listening to clients' needs, translating their ideas
+                                                into actionable solutions. In collaborative settings, I communicate
+                                                ideas clearly and explain the rationale behind coding choices to enhance project comprehension.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenleft6">
+                                        <div class="card-body">
+                                            <div class="card-title">Working Under Pressure</div>
+                                            <div class="card-text">
+                                                Thriving in high-pressure situations, I excel at meeting tight deadlines by
+                                                focusing on essential tasks. Pressure often brings out my ability to prioritize
+                                                effectively and deliver quality results promptly, ensuring client
+                                                satisfaction within specified timeframes.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenleft7">
+                                        <div class="card-body">
+                                            <div class="card-title">Adaptable software</div>
+                                            <div class="card-text">
+                                                I embrace change and innovation in the dynamic world of software development.
+                                                Adapting quickly to evolving circumstances, I recognize that project endpoints
+                                                can shift due to evolving client needs, changing environments, and industry trends.
+                                                This adaptability ensures that the final product aligns with its intended environment.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenleft8">
+                                        <div class="card-body">
+                                            <div class="card-title">Diversity in Technology</div>
+                                            <div class="card-text">
+                                                An advocate for diversity and inclusion,
+                                                I appreciate the power of diverse perspectives in problem-solving.
+                                                Recognizing that varied backgrounds offer unique insights,
+                                                I actively seek diverse opinions to craft well-rounded solutions.
+                                                This approach prevents unintended outcomes, as demonstrated in my ability to
+                                                adjust the design of a social web app based on valuable feedback.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- ========================================== --}}
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="card searchbar" id="fade-in">
+                                            <div class="card-body autotype" id="fade-in-body"><i class="fas fa-search mr-2"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="card searchlist" id="searchlistcard">
+                                            <div class="card-body">
+                                                <ul style="padding-left: 0">
+                                                    <li id="searchlist1">Problem Solving</li>
+                                                    <li id="searchlist2">Teamwork</li>
+                                                    <li id="searchlist3">Programming</li>
+                                                    <li id="searchlist4">Leadership</li>
+                                                    <li id="searchlist5">Communication</li>
+                                                    <li id="searchlist6">Working Under Pressure</li>
+                                                    <li id="searchlist7">Adaptability</li>
+                                                    <li id="searchlist8">Diversity</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 pointsimg">
+                                    {{-- =========================== --}}
+                                    <div class="card skillhiddenright1" style="background-color: transparent; border: none;">
+                                        <div class="card-body">
+                                            <div class="card-img">
+                                                <img src="{{ asset('imgs/problem-solving.png') }}" alt="Problem__Solving__Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenright2" style="background-color: transparent; border: none;">
+                                        <div class="card-body">
+                                            <div class="card-img">
+                                                <img src="{{ asset('imgs/teamwork.png') }}" alt="Teamwork_Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenright3" style="background-color: transparent; border: none;">
+                                        <div class="card-body">
+                                            <div class="card-img">
+                                                <img src="{{ asset('imgs/programming.png') }}" alt="Programming_Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenright4" style="background-color: transparent; border: none;">
+                                        <div class="card-body">
+                                            <div class="card-img">
+                                                <img src="{{ asset('imgs/leadership.png') }}" alt="Leadership_Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenright5" style="background-color: transparent; border: none;">
+                                        <div class="card-body">
+                                            <div class="card-img">
+                                                <img src="{{ asset('imgs/communication.png') }}" alt="Communication_Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenright6" style="background-color: transparent; border: none;">
+                                        <div class="card-body">
+                                            <div class="card-img">
+                                                <img src="{{ asset('imgs/pressure.png') }}" alt="Working_under_pressure_Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenright7" style="background-color: transparent; border: none;">
+                                        <div class="card-body">
+                                            <div class="card-img">
+                                                <img src="{{ asset('imgs/adaptability.png') }}" alt="Adaptability_Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card skillhiddenright8" style="background-color: transparent; border: none;">
+                                        <div class="card-body">
+                                            <div class="card-img">
+                                                 <img src="{{ asset('imgs/diversity.png') }}" alt="Diversity_Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- ==================================== --}}
                                 </div>
                             </div>
                     </div>
@@ -1346,6 +1507,33 @@
                 <div class="card-body">
                     <div class="row">
                         <h1>My Hobbies 🎨</h1>
+                        <div class="row hobbbies justify-content-center">
+                            <div class="col-2">
+                                <div class="card">
+                                    <div class="card-body">Tennis</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card">
+                                    <div class="card-body">Chess</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card">
+                                    <div class="card-body">Mini Programming projects</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card">
+                                    <div class="card-body">Film making and Acting</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card">
+                                    <div class="card-body">Basketball</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1368,6 +1556,7 @@
         </div>
     </section>
     {{-- ====================================================== end of eigth row ================================================================================ --}}
+
 </body>
 </html>
 

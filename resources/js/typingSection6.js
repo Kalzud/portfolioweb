@@ -37,3 +37,34 @@ var typed = new Typed(".autotype",{
         console.log('last 4')
     }
 })
+
+
+const fadeout = document.getElementById('fade-out');
+const fadein = document.getElementById('fade-in');
+// const fadeinbody = document.getElementById('fade-in-body');
+// Function to check if the element is in the viewport and adjust opacity accordingly
+function checkVisibility() {
+    const fadeRect = fadeout.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (fadeRect.top < windowHeight && fadeRect.bottom >= 0) {
+        // Element is in the viewport, so set its opacity to 1 (fade-in)
+        fadeout.classList.add('fade-out');
+        fadein.classList.add('fade-in');
+        // fadeinbody.classList.add('autotype');
+        // typed.start();
+        setTimeout(() => {
+            // fadein.classList.add('fade-in');
+            typed.start();
+        }, 4000);
+        console.log('here');
+    } else {
+        // Element is not in the viewport, so set its opacity to 0 (hidden)
+        // sectionTitle1.style.opacity = '0';
+    }
+}
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
+window.addEventListener('resize', checkVisibility);
+// Initial check
+checkVisibility();

@@ -202,6 +202,7 @@ section{
 .searchbar{
     width: 500px;
     opacity: 0;
+    /* margin-left:10px */
 }
 .searchlist{
     width: 500px;
@@ -265,10 +266,51 @@ section{
         display: none;
     }
 }
+.points .card{
+    background-color: transparent;
+    border: none;
+    transition: transform 1s;
+}
+.points .card:hover{
+    /* text-decoration: underline red; */
+    /* text-transform: uppercase; */
+    transform: scaleY(1.5);
+    transition: 2s;
+}
+.points .card .card-title{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+.pointsimg .card{
+    transition: transform 1s;
+}
+.pointsimg .card:hover{
+    transform: scaleY(1.1);
+    transition: 2s;
+}
+.skillhiddenleft1, .skillhiddenleft2, .skillhiddenleft3, .skillhiddenleft4, .skillhiddenleft5, .skillhiddenleft6, .skillhiddenleft7, .skillhiddenleft8, .skillhiddenright1, .skillhiddenright2, .skillhiddenright3, .skillhiddenright4, .skillhiddenright5, .skillhiddenright6, .skillhiddenright7, .skillhiddenright8 {
+    display: none;
+}
+.searchlist li:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    /* transform: scaleX(2); */
+    transform: scaleY(2);
+    transition: transform 1s;
+}
 /* ====================================== seventh row =========================================================== */
 .seventhrow .main .row h1{
     display: flex;
     justify-content: center;
+}
+.hobbies{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* ====================================== eigth row =========================================================== */
 .eigthrow .main .row h1{
