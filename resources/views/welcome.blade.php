@@ -1083,21 +1083,36 @@
                     <div class="row">
                         <h1>Some services I could offer you 🛠️</h1>
                     </div>
-                    <div class="row">
+                    <div class="row fade-in-up">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-text">Turn your app vision into a reality for iOS, Android, or both, ensuring high-performance, scalability, and top-notch security.</div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-text">Mobile App Development</div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row fade-in-up">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-text">Craft eye-catching websites and powerful web applications with a strong focus on security, responsive design, and code efficiency.</div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-text">Web Development</div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row fade-in-up">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-text">Seamlessly integrate Firebase's powerful features into your project for a robust user experience.</div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-text">Firebase Integration</div>
@@ -1107,12 +1122,22 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
+                                <div class="card-text"> Ensure your software evolves seamlessly, with a focus on reusable code, code optimization, and extended functionality.</div>
+                            </div>
+                        </div>
+                        <div class="card fade-in-right">
+                            <div class="card-body">
                                 <div class="card-text">Software Enhancement and Maintenance</div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="card">
+                            <div class="card-body">
+                                <div class="card-text">Gamify your brand with captivating game experiences, prioritizing performance optimization and immersive gameplay.</div>
+                            </div>
+                        </div>
+                        <div class="card fade-in-left">
                             <div class="card-body">
                                 <div class="card-text">Game Development</div>
                             </div>
@@ -1121,12 +1146,22 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
+                                <div class="card-text">Organize app state efficiently using state management techniques, enhancing user experience and code maintainability.</div>
+                            </div>
+                        </div>
+                        <div class="card fade-in-right">
+                            <div class="card-body">
                                 <div class="card-text">State Management and BLoC Pattern</div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="card">
+                            <div class="card-body">
+                                <div class="card-text">Efficiently manage and secure data using advanced database technologies, tailored to your specific needs.</div>
+                            </div>
+                        </div>
+                        <div class="card fade-in-left">
                             <div class="card-body">
                                 <div class="card-text">Database Management</div>
                             </div>
@@ -1135,6 +1170,11 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
+                                <div class="card-text">Craft user-centric interfaces that combine aesthetic appeal with intuitive user experiences, boosting user engagement.</div>
+                            </div>
+                        </div>
+                        <div class="card fade-in-right">
+                            <div class="card-body">
                                 <div class="card-text">UI/UX Design</div>
                             </div>
                         </div>
@@ -1142,25 +1182,45 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
+                                <div class="card-text">We'll work together in an agile way to ensure your project is always on track.</div>
+                            </div>
+                        </div>
+                        <div class="card fade-in-left">
+                            <div class="card-body">
                                 <div class="card-text">Scrum and Agile Methodologies</div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row fade-in-down">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-text">Save time and resources by targeting multiple platforms with a single codebase.</div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-text">Cross-Platform Development</div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row fade-in-down">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-text">Optimize code for peak performance, faster load times, and minimal resource consumption.</div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-text">Code Optimization</div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row fade-in-down">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-text">Collaborate effectively with your team, providing technical guidance, and facilitating product adoption.</div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-text">Consultation and Collaboration</div>
@@ -1507,30 +1567,30 @@
                 <div class="card-body">
                     <div class="row">
                         <h1>My Hobbies 🎨</h1>
-                        <div class="row hobbbies justify-content-center">
+                        <div class="row hobbies justify-content-center">
                             <div class="col-2">
-                                <div class="card">
-                                    <div class="card-body">Tennis</div>
+                                <div class="card tennis card-hidden">
+                                    <div class="card-body"><div class="card-text">Tennis</div></div>
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card">
-                                    <div class="card-body">Chess</div>
+                                <div class="card chess card-hidden">
+                                    <div class="card-body"><div class="card-text">Chess</div></div>
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card">
-                                    <div class="card-body">Mini Programming projects</div>
+                                <div class="card programming card-hidden">
+                                    <div class="card-body"><div class="card-text">Mini Programming projects</div></div>
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card">
-                                    <div class="card-body">Film making and Acting</div>
+                                <div class="card film card-hidden">
+                                    <div class="card-body"><div class="card-text">Film making and Acting</div></div>
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card">
-                                    <div class="card-body">Basketball</div>
+                                <div class="card basketball card-hidden">
+                                    <div class="card-body"><div class="card-text">Basketball</div></div>
                                 </div>
                             </div>
                         </div>

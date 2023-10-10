@@ -1,40 +1,74 @@
 import '../css/app.css';
 import './bootstrap';
+import './cardreveal';
+import './showsides';
 import './timeline';
 import './typingSection6';
 
 
+const fadeInLeftElements = document.querySelectorAll('.fade-in-left');
+const fadeInRightElements = document.querySelectorAll('.fade-in-right');
+const fadeInUpElements = document.querySelectorAll('.fade-in-up');
+const fadeInDownElements = document.querySelectorAll('.fade-in-down');
 
+// Function to check if the element is in the viewport and adjust opacity accordingly
+function checkVisibility() {
+    fadeInLeftElements.forEach(function (element) {
+        const elementRect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
 
-
-
-
-
-$(document).ready(function () {
-    // Function to show/hide the corresponding card divs on hover
-    $(".searchlist li").hover(function () {
-        // Get the ID of the hovered list item
-        var id = $(this).attr("id");
-
-        // Show the corresponding card divs based on the ID
-        $(".skillhiddenleft1, .skillhiddenleft2, .skillhiddenleft3, .skillhiddenleft4, .skillhiddenleft5, .skillhiddenleft6, .skillhiddenleft7, .skillhiddenleft8, .skillhiddenright1, .skillhiddenright2, .skillhiddenright3, .skillhiddenright4, .skillhiddenright5, .skillhiddenright6, .skillhiddenright7, .skillhiddenright8").hide();
-        if (id === "searchlist1") {
-            $(".skillhiddenleft1, .skillhiddenright1").show();
-        } else if (id === "searchlist2") {
-            $(".skillhiddenleft2, .skillhiddenright2").show();
-        } else if (id === "searchlist3") {
-            $(".skillhiddenleft3, .skillhiddenright3").show();
-        } else if (id === "searchlist4") {
-            $(".skillhiddenleft4, .skillhiddenright4").show();
-        } else if (id === "searchlist5") {
-            $(".skillhiddenleft5, .skillhiddenright5").show();
-        } else if (id === "searchlist6") {
-            $(".skillhiddenleft6, .skillhiddenright6").show();
-        } else if (id === "searchlist7") {
-            $(".skillhiddenleft7, .skillhiddenright7").show();
-        } else if (id === "searchlist8") {
-            $(".skillhiddenleft8, .skillhiddenright8").show();
+        if (elementRect.top < windowHeight && elementRect.bottom >= 0) {
+            // Element is in the viewport, so set its opacity to 0 (fade-out)
+            element.classList.add('fade-in-left');
+        } else {
+            // Element is not in the viewport, so set its opacity to 1 (visible)
+            element.classList.remove('fade-in-left');
         }
     });
-});
 
+    fadeInRightElements.forEach(function (element) {
+        const elementRect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (elementRect.top < windowHeight && elementRect.bottom >= 0) {
+            // Element is in the viewport, so set its opacity to 0 (fade-out)
+            element.classList.add('fade-in-right');
+        } else {
+            // Element is not in the viewport, so set its opacity to 1 (visible)
+            element.classList.remove('fade-in-right');
+        }
+    });
+
+    fadeInUpElements.forEach(function (element) {
+        const elementRect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (elementRect.top < windowHeight && elementRect.bottom >= 0) {
+            // Element is in the viewport, so set its opacity to 0 (fade-out)
+            element.classList.add('fade-in-up');
+        } else {
+            // Element is not in the viewport, so set its opacity to 1 (visible)
+            element.classList.remove('fade-in-up');
+        }
+    });
+
+    fadeInDownElements.forEach(function (element) {
+        const elementRect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (elementRect.top < windowHeight && elementRect.bottom >= 0) {
+            // Element is in the viewport, so set its opacity to 0 (fade-out)
+            element.classList.add('fade-in-down');
+        } else {
+            // Element is not in the viewport, so set its opacity to 1 (visible)
+            element.classList.remove('fade-in-down');
+        }
+    });
+}
+
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
+window.addEventListener('resize', checkVisibility);
+
+// Initial check
+checkVisibility();
