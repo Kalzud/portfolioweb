@@ -92,7 +92,26 @@ section{
 .aboutMeCard .card-title{
     font-size: large;
 }
+.aboutMeCard h4{
+    /* font-size: large; */
+    display: inline;
+}
+.aboutMeCard .card-text:hover{
+    transform: scale(1.1);
+}
 /* ================================================= Second row ================================================================== */
+.aboutmepart2 .card{
+    width: 70%;
+    margin-top: 30px;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+.aboutmepart2 .card:hover{
+    background-color: black;
+    color: white;
+}
 /* =========================================== third row ================================================================================ */
 .top-section{
     text-align: center;
@@ -231,6 +250,12 @@ section{
 }
 .fade-in-down {
     animation: fadeInDown 2s ease-in-out forwards;
+}
+.servicehidden1, .servicehidden2, .servicehidden3, .servicehidden4, .servicehidden5, .servicehidden6, .servicehidden7, .servicehidden8, .servicehidden9, .servicehidden10, .servicehidden11, .servicehidden12 {
+    /* background-color: #000; */
+    color: white;
+    display: none;
+    background-image: url(../../public/svg/servicebg.svg);
 }
 /* ====================================== fifth row =================================================================================== */
  /* see thirdrow stylying because they use the same timeline and element stylying */

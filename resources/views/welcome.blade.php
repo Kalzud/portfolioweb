@@ -851,33 +851,22 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-8">
-                            <div class="card aboutMeCard">
-                                <div class="card-body">
+                            <div class="card aboutMeCard" style="border: none; background-color: transparent">
+                                <div class="card-body autotype1 code-container">
                                     <div class="card-title aboutMeHeading" style="font-size: xx-large;">About Me 😊
                                     </div>
                                     <div class="card-text">
-                                        Hello, I'm Emmanuel Okala Uduma 🚀, a passionate and
-                                        self-motivated software engineering student based in the United Kingdom 🇬🇧.
-                                        My journey into the world of software development began about three years ago,
-                                        and it has been a thrilling adventure ever since.
+                                        Hello, I'm <h4>Emmanuel Okala Uduma 🚀</h4>, and welcome to my portfolio
                                     </div>
-                                    <div class="card-title">💡 My Story:</div>
+                                    <div class="card-title">💡 The Hopeful end goal</div>
                                     <div class="card-text">
-                                        The spark that ignited my passion for software development came when
-                                        I was tasked with building my first social media web application as
-                                        a school project. What started as a simple assignment soon became an
-                                        all-consuming obsession. The thrill of creating something from scratch,
-                                        with the power to impact the real world, was simply irresistible.
+                                        Hopefully this is the beginning of a love story betwwen my skills and the realisation
+                                        of your project.
                                     </div>
-                                    <div class="card-title">🌟 My Journey So Far:</div>
+                                    <div class="card-title">🌟 Thanks</div>
                                     <div class="card-text">
-                                        Since those early days, I've dabbled in a wide array of software development
-                                        projects,
-                                        ranging from Android applications to cross-platform solutions, web applications,
-                                        desktop games, and more. With each project, my confidence grew,
-                                        and I found myself eagerly taking on collaborative freelance work,
-                                        not just for the paycheck, but because I'm genuinely passionate
-                                        about crafting software solutions.
+                                        Thank you for visiting, and I look forward to connecting with you!
+                                        🌟 Let's code the future together! 🌟
                                     </div>
                                 </div><!--card body end -->
                             </div><!--card end -->
@@ -897,8 +886,8 @@
         <div class="row secondrow">
             <div class="card aboutmepart2" style="border: none; background-color: transparent">
                 <div class="card-body">
-                    <div class="card">
-                        <card-body>
+                    <div class="card fade-in-left">
+                        <div class="card-body">
                             <div class="card-title">🚀 My Mission:</div>
                             <div class="card-text">
                                 My journey in the world of software development is far from over;
@@ -906,12 +895,12 @@
                                 nook and cranny of this field, pushing the boundaries of what's possible,
                                 and maximizing my potential wherever it leads me..
                             </div>
-                        </card-body>
+                        </div>
                     </div>
                     {{-- ======================================== --}}
                     <div class="right">
-                        <div class="card">
-                            <card-body>
+                        <div class="card fade-in-right">
+                            <div class="card-body">
                                 <div class="card-title">🔍 What Sets Me Apart:</div>
                                 <div class="card-text">
                                     One of the reasons I excel in projects and earn opportunities is my
@@ -920,12 +909,12 @@
                                     I create is not only easily manageable but also continuously improvable,
                                     because the world of software is ever-evolving.
                                 </div>
-                            </card-body>
+                            </div>
                         </div>
                     </div>
                     {{-- ======================================== --}}
-                    <div class="card">
-                        <card-body>
+                    <div class="card fade-in-left">
+                        <div class="card-body">
                             <div class="card-title">🤝 My Commitment:</div>
                             <div class="card-text">
                                 I always strive to deliver more value than expected.
@@ -933,7 +922,7 @@
                                 my goal is to ensure that the end result is nothing short of exceptional.
                                 I believe in leaving clients and companies not just satisfied but genuinely impressed.
                             </div>
-                        </card-body>
+                        </div>
                     </div>
                     {{-- ======================================== --}}
                 </div>
@@ -1083,8 +1072,8 @@
                     <div class="row">
                         <h1>Some services I could offer you 🛠️</h1>
                     </div>
-                    <div class="row fade-in-up">
-                        <div class="card">
+                    <div class="row fade-in-up service1">
+                        <div class="card servicehidden1">
                             <div class="card-body">
                                 <div class="card-text">Turn your app vision into a reality for iOS, Android, or both, ensuring high-performance, scalability, and top-notch security.</div>
                             </div>
@@ -1095,8 +1084,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row fade-in-up">
-                        <div class="card">
+                    <div class="row fade-in-up service2">
+                        <div class="card servicehidden2">
                             <div class="card-body">
                                 <div class="card-text">Craft eye-catching websites and powerful web applications with a strong focus on security, responsive design, and code efficiency.</div>
                             </div>
@@ -1107,8 +1096,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row fade-in-up">
-                        <div class="card">
+                    <div class="row fade-in-up service3">
+                        <div class="card servicehidden3">
                             <div class="card-body">
                                 <div class="card-text">Seamlessly integrate Firebase's powerful features into your project for a robust user experience.</div>
                             </div>
@@ -1119,8 +1108,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="card">
+                    <div class="row service4">
+                        <div class="card servicehidden4">
                             <div class="card-body">
                                 <div class="card-text"> Ensure your software evolves seamlessly, with a focus on reusable code, code optimization, and extended functionality.</div>
                             </div>
@@ -1131,8 +1120,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="card">
+                    <div class="row service5">
+                        <div class="card servicehidden5">
                             <div class="card-body">
                                 <div class="card-text">Gamify your brand with captivating game experiences, prioritizing performance optimization and immersive gameplay.</div>
                             </div>
@@ -1143,8 +1132,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="card">
+                    <div class="row service6">
+                        <div class="card servicehidden6">
                             <div class="card-body">
                                 <div class="card-text">Organize app state efficiently using state management techniques, enhancing user experience and code maintainability.</div>
                             </div>
@@ -1155,8 +1144,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="card">
+                    <div class="row service7">
+                        <div class="card servicehidden7">
                             <div class="card-body">
                                 <div class="card-text">Efficiently manage and secure data using advanced database technologies, tailored to your specific needs.</div>
                             </div>
@@ -1167,8 +1156,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="card">
+                    <div class="row service8">
+                        <div class="card servicehidden8">
                             <div class="card-body">
                                 <div class="card-text">Craft user-centric interfaces that combine aesthetic appeal with intuitive user experiences, boosting user engagement.</div>
                             </div>
@@ -1179,8 +1168,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="card">
+                    <div class="row service9">
+                        <div class="card servicehidden9">
                             <div class="card-body">
                                 <div class="card-text">We'll work together in an agile way to ensure your project is always on track.</div>
                             </div>
@@ -1191,8 +1180,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row fade-in-down">
-                        <div class="card">
+                    <div class="row fade-in-down service10">
+                        <div class="card servicehidden10">
                             <div class="card-body">
                                 <div class="card-text">Save time and resources by targeting multiple platforms with a single codebase.</div>
                             </div>
@@ -1203,8 +1192,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row fade-in-down">
-                        <div class="card">
+                    <div class="row fade-in-down service11">
+                        <div class="card servicehidden11">
                             <div class="card-body">
                                 <div class="card-text">Optimize code for peak performance, faster load times, and minimal resource consumption.</div>
                             </div>
@@ -1215,8 +1204,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row fade-in-down">
-                        <div class="card">
+                    <div class="row fade-in-down service12">
+                        <div class="card servicehidden12">
                             <div class="card-body">
                                 <div class="card-text">Collaborate effectively with your team, providing technical guidance, and facilitating product adoption.</div>
                             </div>
@@ -1619,75 +1608,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{{-- <div class="card-title">👀 Explore My Portfolio:</div>
-                            <div class="card-text">
-                                Feel free to explore the rest of my portfolio, where you'll find a showcase
-                                of my work and the projects that define my journey in software development.
-                                I hope you enjoy the journey as much as I have enjoyed living it.
-                            </div>
-                            <div class="card-title"></div>
-                            <div class="card-text">
-                                Thank you for taking the time to get to know me better,
-                                and I look forward to connecting with you and exploring
-                                the exciting possibilities of technology together! 🚀🌟
-                            </div> --}}
