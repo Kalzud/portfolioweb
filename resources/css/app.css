@@ -423,6 +423,28 @@ section{
     display: flex;
     justify-content: center;
 }
+.falling-text {
+    list-style-type: none;
+    position: relative;
+}
+
+.falling-text li {
+    display: inline-block;
+    position: absolute;
+    animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
 
 
 
