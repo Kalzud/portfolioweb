@@ -850,7 +850,7 @@
             <div class="card" style="border: none; background-color: transparent">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="sm-col-12 md-col-8">
                             <div class="card aboutMeCard" style="border: none; background-color: transparent">
                                 <div class="card-body autotype1 code-container">
                                     <div class="card-title aboutMeHeading" style="font-size: xx-large;">About Me 😊
@@ -871,7 +871,7 @@
                                 </div><!--card body end -->
                             </div><!--card end -->
                         </div>
-                        <div class="col-4 portImg">
+                        <div class="sm-col-12 md-col-4 portImg">
                             <img src="{{ asset('imgs/pp2.jpg') }}" alt="Portfolio_Image">
                         </div>
                     </div>
