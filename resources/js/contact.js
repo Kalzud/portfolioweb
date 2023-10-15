@@ -8,7 +8,7 @@ const textingList = [
 const ullist = document.getElementById('falling-text');
 
 // Create and append list items with random positions
-textList.forEach((text, index) => {
+textList.forEach((text) => {
     const li = document.createElement('li');
     li.textContent = text;
 
