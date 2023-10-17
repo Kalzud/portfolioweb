@@ -1600,7 +1600,7 @@
                     <div class="row">
                         <h1>My Contacts 📞</h1>
                         <ul class="falling-text">
-                            <li>Linkedin: <span class="falling-link"><a href="https://www.linkedin.com/in/emmanuel-uduma-781965229/">https://www.linkedin.com/in/emmanuel-uduma-781965229/</a></span></li>
+                            <li>Linkedin yes: <span class="falling-link"><a href="https://www.linkedin.com/in/emmanuel-uduma-781965229/">https://www.linkedin.com/in/emmanuel-uduma-781965229/</a></span></li>
                             <li>Phone Number: <span class="falling-number">+44 (0) 7310881537</span></li>
                             <li>Email: <span class="falling-link"><a href="mailto:udumakalz@gmail.com?subject=Hello%20&body=I%20have%20a%20question">udumakalz@gmail.com</a></span></li>
                             <li>Github: <span class="falling-link"><a href="https://github.com/Kalzud">https://github.com/Kalzud</a></span></li>
